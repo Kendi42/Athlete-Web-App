@@ -21,8 +21,9 @@ My roles in this project were as follows
 - CSS
 
 
-# Application Walk through
-## Landing page View
-<p> This is the first page of the application upon startup</p>
-<img src="" width="200" height="400"/>
+# Screenshots
+<img src="https://github.com/Kendi42/Athlete-Web-App/blob/e7f0dd524a59c03d5753cfea397834d5544c5156/home.png" width="1200" height="800"/>
+<img src="https://github.com/Kendi42/Athlete-Web-App/blob/e7f0dd524a59c03d5753cfea397834d5544c5156/enter%20records.png" width="1200" height="800"/>
+<img src="https://github.com/Kendi42/Athlete-Web-App/blob/e7f0dd524a59c03d5753cfea397834d5544c5156/100m%20races.png" width="1200" height="800"/>
+<img src="https://github.com/Kendi42/Athlete-Web-App/blob/e7f0dd524a59c03d5753cfea397834d5544c5156/200m%20races.png" width="1200" height="800"/>
 
