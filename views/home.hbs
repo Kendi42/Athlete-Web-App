@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>IST4035 Project</title>
+        <meta charset="utf-8"/>
+        <!--Bootstrap css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script> 
+        <!--External css-->
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body onload="fetchRaces()">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+
+    <!--Navbar with logo-->
+      <nav class="navbar navbar-expand-sm" id="navbarStyle">
+          <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="#" >
+              <img src="\img\logoa.png" alt="Logo"  id="sizeofLogo">
+            </a>
+          </div>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="#navbarStyle"><strong>HOME</strong></a></li>
+                  <li><a href="#trackContainer"><strong>TRACK</strong></a></li>        
+              </ul>
+          </div> 
+        </nav>
+
+        <!--Content of webpage-->
+          <div id="imageContent"> 
+            <div id="content1">
+            <h1 id="track">Keep Count of your Track Time!</h1>
+            <p>We all begin running because we want change — even if only a change of pace.</p>
+            <p>Our goal-setting tools will help you track your time to a pace that’s right for you.</p>
+            <p> As a professional athlete who specializes in runnin 100 and 200 metres sprint race,</p>
+            <p>we offer the best way to keep track of your times in any championship events.</p>
+            <div id = "four">
+                <div class="nav-links">
+                    <ul>            
+                        <li><a href="#trackContainer"><strong>Let us Track</strong></a></li>        
+                    </ul>
+                </div> 
+            </div>
+          </div>
+          </div>
+
+        <!--Form-->
+        <div id="trackContainer">
+            <form onsubmit="fetchRaces()">
+                <h2 style="font-family: 'Courier New', Courier, monospace;">Enter new records:</h2>
+
+                <div class="timing">
+                <label>
+                    <span>Race Date</span>
+                    <input id="raceDate" type="date"/>
+                </label>
+                </div>
+
+                <div class="timing">
+                    <label>
+                    <span>Time</span>
+                    <input id="raceTime" type="text" />
+                </label>
+                </div>
+                
+                <div class="timing">
+                    <label>
+                    <span> Category of Race</span>
+                    <input type="radio" id="100" name="raceDistance" value="100" >100m Race</input>
+                    <input type="radio" id="200" name="raceDistance" value="200">200m Race</input>
+                </label>
+                </div>
+                
+                <label>
+                    <input type="submit" class="button" value="Add race">
+                </label>
+            </form>
+            <h2 class="timingSec">Timings</h2>
+            <table id="content">
+            </table>
+        
+        </div>
+
+        <!--Chart JS-->
+        <h1 id="chartTitle" class="timingSec">Line Chart of Races over Time</h1>
+        <div class="chartContainer">
+            <h2>100m Races</h2>
+            <div>
+                <canvas id="raceChart"></canvas>
+
+            </div>
+            <h3 id="median1">Median Time: </h3>
+
+            <h2>200m Races</h2>
+            <div>
+                <canvas id="raceChart2"></canvas>
+
+            </div>
+            <h3 id="median2">Median Time: </h3>
+
+
+        </div>
+
+        <!--footer-->
+          <footer>
+            <div class="footer-content">
+                <h3>RunKeeper</h3>
+                <p>Connect</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p style="font-family: 'Courier New', monospace ;">RunKeeper</p><br>
+                <p>copyright &copy; <a href="#">2022 RunKeeper, Inc. All Rights Reserved | Group 7</a>  </p>
+                        
+    
+        </footer>   
+
+    </body>
+    <script src="js/main.js"></script>
+
+</html>

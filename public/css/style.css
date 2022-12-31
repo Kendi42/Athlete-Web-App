@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align:center;
+    font-size: 46p;
+}
+
+/*.................Navbar................*/
+
+#navbarStyle {
+    background-color:#B01E68;
+    height: 8em;
+}
+
+.nav-links{
+    flex: 1;
+    text-align:center;
+
+}
+
+.nav-links ul li{
+    list-style: none; 
+    display: block;
+    padding: 14px 16px;
+    overflow: hidden;
+    position:relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:aqua;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.nav-links ul li:hover::after{
+    width: 80%;
+    
+}
+
+#sizeofLogo {
+    width: 10em;
+    height: 10em;
+    
+}
+
+/*.................welcomepage................*/
+
+#track{
+    color: white;
+    font-family: Century Gothic, monospace;
+    text-align: right;
+    font-weight: bolder;
+}
+
+#content1 {
+    float: right;
+    font-family: Century Gothic, monospace;
+    color: white;
+
+}
+
+#content1 h1{
+    margin-top: 100px;
+    margin-left: 85px;
+    text-transform: uppercase;
+}
+h3 {
+    color:#07090a;
+    font-weight: bold;
+    text-align: center;
+}
+#content1 p{
+    margin-left: 85px;
+    font-weight: bolder;
+    border: whitesmoke;
+    border-radius:2em;
+    border-width: 2em;
+}
+
+#imageContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(9, 8, 32);
+    height: 100vh;
+
+}
+
+#four {
+border: 6px solid cyan;    
+  border-radius: 12px;  
+  font-size: 30px;  
+  font-weight: bold;  
+  margin: 10px;    
+  text-align: center;
+  padding: 2px 5px 2px;
+ 
+ 
+}
+
+#four.hover {
+    background-color: #D62828;
+}
+#imageContent::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.25;
+    background-image: url("run.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    
+}
+/*.................form................*/
+
+form {
+    background-color: cyan;
+    padding-top:2em;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding-bottom: 3%;
+    
+}
+
+form h2{
+    margin-top: 15px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    padding:1%;
+}
+h2, h4 {
+    color: black;
+    font-style:normal;
+    font-family: Century Gothic, monospace;
+    font-weight: bolder;
+    
+}
+span{
+    font-weight: bolder;
+}
+
+.timing{
+    display: inline-block;
+    margin: 1%;
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+
+
+.button{
+    background-color: #F77F00;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+}
+
+.button:hover{
+    background: #003049;
+}
+.button:active{
+    background: #0030ff;
+
+}
+
+/*.................Table................*/
+.timingSec{
+    color: #F77F00;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 2.5em;
+    padding-left: 2em;
+    font-weight: bold;
+
+
+}
+
+table {
+    margin: auto;
+    width: 88%;
+    
+}
+
+th {
+    padding-top: 0.8em;
+    padding-bottom: 0.6em;
+    text-align: left;
+}
+td {
+    padding-bottom: 0.4em;
+}
+button{
+    background-color: #F77F00;
+    border: none;
+    color: #FFFFFF;
+    margin:0.1em;
+}
+
+/*.................chart................*/
+#chartTitle{
+    margin-top: 3%;
+    padding-top: 2em;
+    margin:auto;
+    text-align: center;
+
+}
+.chartContainer{
+    width:70%;
+    margin: 3em auto;
+    padding: 1em;
+    padding-top: 0.2em;
+    border: none;
+    padding-top: 1em;
+}
+.chartContainer h2{
+    font-weight: normal;
+    padding-top: 0.2em;
+}
+.chartContainer h3{
+    font-size: 1.5em;
+    padding:0.5em;
+}
+
+#raceChart{
+    width:100%
+}
+
+
+/*.................footer................*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 30px;
+    color: black;
+    font-family:'Brush Script MT', cursive;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color:black;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: white;
+}
+
+.footer-bottom{
+    background: #B01E68;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: rgb(209, 207, 207);
+}
+.footer-bottom p a{
+  color:rgb(209, 207, 207);
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-content{
+    background-color: cyan;
+    color: #000;
+}
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
