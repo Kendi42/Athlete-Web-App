@@ -1,5 +1,5 @@
 # Athlete-Web-App
-This is a web application that makes use of NodeJs, that allows an athlete to keep track of their ruining times and see a visual representation of their progress over time. 
+This is a web application that makes use of NodeJs, that allows an athlete to keep track of their running times and see a visual representation of their progress over time. 
 
 ## Colaborators
 This is a group project done in collaboration with 
