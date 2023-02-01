@@ -1,7 +1,7 @@
 # Athlete-Web-App
 This is a web application that makes use of NodeJs, that allows an athlete to keep track of their running times and see a visual representation of their progress over time. 
 
-## Colaborators
+## Collaborators
 This is a group project done in collaboration with 
 - [Daniel Theuri](https://github.com/dantheuri17)
 - [Viviane Rugwiro](https://www.linkedin.com/in/viviane-benny-rugwiro-063561151/)
